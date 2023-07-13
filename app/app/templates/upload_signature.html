@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Upload Signature
+{% endblock %}
+
+{% block app_content %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.min.css">
+    <div class="container">
+        <h1>Upload Signature</h1>
+         <form action="{{ url_for('main.upload_signature') }}" class="dropzone">
+    </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
+    <script>
+        Dropzone.options.signatureDropzone = {
+            url: "{{ url_for('main.upload_signature') }}",
+            maxFiles: 1,
+            acceptedFiles: 'image/*',
+            init: function () {
+                this.on("success", function (file, response) {
+                    // Handle successful upload and processing of the image
+                    console.log(response);
+                });
+            }
+        };
+    </script>
+{% endblock %}
