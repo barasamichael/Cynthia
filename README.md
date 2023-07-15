@@ -47,39 +47,39 @@
 ```
 
 The project structure consists of the following directories and files:
-**app**: The main application package containing the core logic of the signature verification system.
-**__init__.py**: Initialization file for the app package.
-auth: Subpackage for authentication-related functionality.
-**__init__.py**: Initialization file for the auth subpackage.
-**email.py**: Module for sending email notifications.
-**forms.py**: Forms definitions for user authentication.
-**routes.py**: Routes and views for user authentication.
-errors: Subpackage for handling error pages.
-**__init__.py**: Initialization file for the errors subpackage.
-**handlers.py**: Handlers for different types of errors (e.g., 404, 500).
-main: Subpackage for the main functionality of the application.
-**__init__.py**: Initialization file for the main subpackage.
-**forms.py**: Forms definitions for main application functionality.
-**routes.py**: Routes and views for the main application functionality.
-**models.py**: Module defining database models and data structures.
-static: Directory for static files (e.g., CSS, JavaScript).
-templates: Directory for HTML templates used by the application.
-auth: Subdirectory for authentication-related templates.
-**login.html**: Template for the login page.
-**register.html**: Template for the registration page.
-**base.html**: Base template with common elements for other templates.
-errors: Subdirectory for error-related templates.
-**404.html**: Template for the 404 error page.
-**500.html**: Template for the 500 error page.
-**index.html**: Template for the main application's index page.
-**upload_references.html**: Template for the upload references page.
-**upload_signature.html**: Template for the upload signature page.
-**config.py**: Configuration file for the application.
-**database.db**: SQLite database file storing application data.
-**flasky.py**: Main entry point file for running the application.
-**requirements.txt**: File specifying the required Python dependencies.
-static/images/user_1: Directory for storing user-specific image files.
-**temp_image.jpg**: Temporary image file used in the application.
+- **app**: The main application package containing the core logic of the signature verification system.
+- **__init__.py**: Initialization file for the app package.
+- auth: Subpackage for authentication-related functionality.
+- **__init__.py**: Initialization file for the auth subpackage.
+- **email.py**: Module for sending email notifications.
+- **forms.py**: Forms definitions for user authentication.
+- **routes.py**: Routes and views for user authentication.
+- errors: Subpackage for handling error pages.
+- **__init__.py**: Initialization file for the errors subpackage.
+- **handlers.py**: Handlers for different types of errors (e.g., 404, 500).
+- main: Subpackage for the main functionality of the application.
+- **__init__.py**: Initialization file for the main subpackage.
+- **forms.py**: Forms definitions for main application functionality.
+- **routes.py**: Routes and views for the main application functionality.
+- **models.py**: Module defining database models and data structures.
+- static: Directory for static files (e.g., CSS, JavaScript).
+- templates: Directory for HTML templates used by the application.
+- auth: Subdirectory for authentication-related templates.
+- **login.html**: Template for the login page.
+- **register.html**: Template for the registration page.
+- **base.html**: Base template with common elements for other templates.
+- errors: Subdirectory for error-related templates.
+- **404.html**: Template for the 404 error page.
+- **500.html**: Template for the 500 error page.
+- **index.html**: Template for the main application's index page.
+- **upload_references.html**: Template for the upload references page.
+- **upload_signature.html**: Template for the upload signature page.
+- **config.py**: Configuration file for the application.
+- **database.db**: SQLite database file storing application data.
+- **flasky.py**: Main entry point file for running the application.
+- **requirements.txt**: File specifying the required Python dependencies.
+- static/images/user_1: Directory for storing user-specific image files.
+- **temp_image.jpg**: Temporary image file used in the application.
 This structure separates different components of the application into logical 
 modules, making it easier to organize and maintain the codebase.
 
