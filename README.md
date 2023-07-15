@@ -134,7 +134,7 @@ def index():
     return 'Welcome to the Authenticity Prediction API'
 
 def start_ngrok():
-    ngrok.set_auth_token('2K0G3tRlMdJ3Soq3AERZqj7QWJs_4McbRLKPTCi34vnHXgqU1')
+    ngrok.set_auth_token('<ngrok-token>')
     url = ngrok.connect(5000).public_url
     subprocess.run(["ngrok", "http", "5000", "--proto=http"])
     print(' * Tunnel URL:', url)
